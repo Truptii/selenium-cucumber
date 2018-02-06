@@ -1,26 +1,24 @@
 package seleniumgluecode;
-
-	import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-	import org.openqa.selenium.By;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.firefox.FirefoxDriver;
-	import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
-	import cucumber.api.java.en.Then;
-	import cucumber.api.java.en.When;
-
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -29,7 +27,7 @@ import org.junit.Assert;
 		public static WebDriver driver;
 		@Given("^I am on the homepage$")
 		public void user_is_on_homepage() throws Throwable {
-			System.setProperty("webdriver.gecko.driver", "/Users/truptibhosale0429/Documents/Developer/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
 
 	        driver = new FirefoxDriver();
 	        driver.get("http://automationpractice.com/index.php");
